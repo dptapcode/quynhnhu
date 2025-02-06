@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạm Biệt Các Bạn</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: #fff;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0, 0 0 50px #ff0, 0 0 60px #ff0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tạm Biệt Các Bạn!</h1>
+        <p>Cảm ơn bạn đã ghé thăm. Hẹn gặp lại!</p>
+    </div>
+
+    <div class="stars">
+        <!-- Stars will be generated here by JavaScript -->
+    </div>
+
+    <script>
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+            document.querySelector('.stars').appendChild(star);
+
+            setTimeout(() => {
+                star.remove();
+            }, 3000);
+        }
+
+        setInterval(createStar, 200);
+    </script>
+</body>
+</html>
