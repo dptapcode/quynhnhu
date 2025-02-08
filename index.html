@@ -1,115 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGUYEN QUYNH NHU</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        h1{
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            width:fit-content;
-            margin:0 auto;
-            font-size: 30px;
-            font-family:serif;
-        }
+        nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
     </style>
-
-
-<style>
-    h4 {
-        text-align: left;
-        margin-left: 300px;
-        font-size: 20px;
-        font-weight: bold;
-        background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
-        background-size: 200% 100%;
-        color: white;
-        -webkit-background-clip: text;
-        background-clip: text;
-        animation: shimmer 1.5s infinite linear;
-    }
-
-    @keyframes shimmer {
-        0% {
-            background-position: -200% 0;
-        }
-        100% {
-            background-position: 200% 0;
-        }
-    }
-</style>
-
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="#gioithieu">Giới thiệu</a></li>
-                <li><a href="#sothich">Sở thích</a></li>
-                <li><a href="#baihat">Bài hát yêu thích</a></li>
-                
-            
-            </ul>
-        </nav>
+            <div>
+                <nav style="display: inline-flex;margin: auto;">
+                    <li><a href="index.html">Giới thiệu</a></li>
+                    <li><a href="sothich.html   ">Sở thích</a></li>
+                    <li><a href="baihat.html">Bài hát yêu thích</a></li>
+                    <li><a href="form.html">Liên hệ</a></li>
+                </nav>
+            </div>
+
+       <div> <h1>WELCOME TO QUYNH NHU WEDSITE</h1> </div>
+
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="gioithieu">
-        <img src="images/quynhnhu.jpg" alt="Ảnh đại diện" class="circle-img">
-        <br>
-        <br>
-        <h1>NGUYỄN QUỲNH NHƯ</h1>
-        <p> From 12A1.1 THPT Liên Hà</p>
-        <p>Một cô nàng sống tình cảm, quan tâm đến mọi người xung quanh.</p>
+    <section class="profile">
+        <img src="images/quynhnhu.jpg" alt="Ảnh đại diện" class="avatar">
+        <h2>Nguyễn Quỳnh Như</h2>
+        <p>Học Sinh | Tiktoker | Nàng thơ</p>
     </section>
+    <section class="about">
+        <h2>Giới thiệu</h2>
+        <p>Chào mọi người, mình là Nguyễn Quỳnh Như, hiện đang là học sinh trường Trung học phổ thông Liên Hà. Mình là một người khá hòa đồng, dễ gần và luôn sẵn sàng kết bạn với tất cả mọi người.
 
-        
-<br>
-    <section id="sothich" class="daumuc"> <h2>Sở thích</h2>
+            Sở thích của mình khá đa dạng, từ giải trí đến học tập. Mình thích chơi game để giải tỏa căng thẳng sau những giờ học, xem phim để khám phá những câu chuyện và thế giới mới, và đọc sách để mở rộng kiến thức và nuôi dưỡng tâm hồn.
+            
+            Mình tin rằng mỗi người đều có những điểm mạnh và tài năng riêng. Mình đang cố gắng từng ngày để khám phá và phát triển bản thân, trở thành một người có ích cho xã hội.</p>
     </section>
-    <br>
-    <section style="display: flex; gap: 30px;width: 25%;margin: auto;">
-        <div>
-            <img src="https://fpt.vn/storage/upload/images/articles/tin_fpt/xem_phim_tai_nha.png" alt="" class="anhsothich">
-            <h3>Xem phim</h3>
-        </div>
-
-    
-
-    
-
-    </section>
-    <section>
-    </div>
-        <h2 class="daumuc" id="baihat">Bài hát yêu thích</h2>
-        <video controls class="vid" src="images/nhachay7.mp4"></video>
-
-    </section>
-    
-    </div>
-    <br>
-    <br>
-    <br>
-  <a href="form.html" target="_blank">
-    <button class="custom-button" >Liên Hệ</button></a>
-    <br>
-    <br>
-    <br>
-    <a target="_blank" href="wed1.html">
-        <button class="custom-button" >WEDCON1</button>
-    </a><br>
-    <br>
-    <a target="_blank" href="wed2.html"><button class="custom-button" >WEDCON2</button></a>
-<br>
-<br>
-<br>
-<br>
-
-    
 </body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+    }
+    header {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .profile {
+        margin-top: 20px;
+    }
+    .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+    .about, .contact {
+        margin: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
